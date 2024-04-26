@@ -2,6 +2,9 @@ import { Link } from "react-router-dom";
 
 import { socialLinks } from "../constants";
 
+const currentDate = new Date();
+const year = currentDate.getFullYear();
+
 const Footer = () => {
   return (
     <footer className='footer font-poppins'>
@@ -9,7 +12,7 @@ const Footer = () => {
 
       <div className='footer-container'>
         <p>
-          © 2024 <strong>Syart</strong>. All rights reserved.
+          © {year} <strong>Syart</strong>. All rights reserved.
         </p>
 
         <div className='flex gap-3 justify-center items-center'>
